@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Card } from '../../../models';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Car } from '../../../models';
 
 @Component({
   selector: 'app-card',
@@ -7,13 +7,15 @@ import { Card } from '../../../models';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-  @Input() data: Card;
+  @Input() data: Car;
+  @Output() carSelected = new EventEmitter();
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
 
-
+  OnClickView(car: Car) {
+    this.carSelected.emit(car);
   }
 
 }
