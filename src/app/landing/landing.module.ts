@@ -1,20 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { FormsModule } from '@angular/forms';
 import { AppLandingRoutingModule } from './landing-routing.module';
 
 // Components
 import { LandingComponent } from './';
 
 import { HeaderComponent, FooterComponent } from './components';
-import { CardComponent } from './shared/card/card.component';
+import { CardComponent } from './shared/';
 import { PortfolioComponent } from './pages';
-
+import { SearchPipe } from './shared/pipes';
 
 @NgModule({
   imports: [
     AppLandingRoutingModule,
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     LandingComponent,
@@ -26,7 +27,9 @@ import { PortfolioComponent } from './pages';
     HeaderComponent,
     FooterComponent,
     CardComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    SearchPipe
   ],
+  providers: [SearchPipe]
 })
 export class LandingModule { }
