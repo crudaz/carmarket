@@ -14,8 +14,10 @@ export class CardComponent implements OnInit {
 
   ngOnInit() { }
 
-  OnClickView(car: Car) {
+  OnClick(car: Car, action: string) {
+    action === 'compare' ? car.toCompare = true : car.toCompare = false; 
     this.carSelected.emit(car);
   }
+
 
 }

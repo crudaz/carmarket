@@ -8,4 +8,5 @@ export class Car {
     photo: string;
     year: string;
     price: string;
+    toCompare?: boolean;
 }
