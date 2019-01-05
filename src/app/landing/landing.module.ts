@@ -5,7 +5,11 @@ import { AppLandingRoutingModule } from './landing-routing.module';
 
 // Components
 import { LandingComponent } from './';
-import { HeaderComponent } from './components';
+
+import { HeaderComponent, FooterComponent } from './components';
+import { CardComponent } from './shared/card/card.component';
+import { PortfolioComponent } from './pages';
+
 
 @NgModule({
   imports: [
@@ -14,11 +18,15 @@ import { HeaderComponent } from './components';
   ],
   exports: [
     LandingComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   declarations: [
     LandingComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    CardComponent,
+    PortfolioComponent
   ],
 })
 export class LandingModule { }
