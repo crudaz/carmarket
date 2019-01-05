@@ -1,0 +1,15 @@
+<div class="card" *ngFor="let item of newList">
+  <img [src]="item.imagePath" alt="Avatar" class="card__image">
+  <div class="card__content">
+    <h4><b>{{item.model}}</b></h4> 
+    <div class="card__content__column">
+      <div>{{item.year}}</div>
+      <div>{{item.price | currency}}</div>
+    </div>
+    
+    <div class="card__button btn-toolbar"> 
+      <a href="#" class="btn btn-primary btn-lg" role="button">Compare</a>
+      <a href="#" class="btn btn-default btn-lg" role="button">View</a>
+    </div>
+  </div>
+</div>
