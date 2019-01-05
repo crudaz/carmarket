@@ -1,0 +1,40 @@
+<div class="detail">
+  
+    <div class="detail__brand">
+        <span>{{carSelected.mark}}  {{carSelected.model}}</span>
+        <span>Modelo</span>
+        <span>Precio</span>
+    </div>
+
+    <img src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC091A021001.jpg&width=640&height=462" alt="Avatar" class="card__image">
+    <div>
+        <p>Caracteristicas</p>
+        <p>{{carSelected.mark}} {{carSelected.model}}</p>
+
+        <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">Color</th>
+                <td>{{carSelected.color}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Mark</th>
+                <td>{{carSelected.mark}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Type</th>
+                <td>{{carSelected.type}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Transmisión</th>
+                <td>{{carSelected.transmision}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>   
+    
+    <a href="#" 
+         class="btn btn-primary btn-lg" 
+         role="button">Back</a>
+
+</div>
