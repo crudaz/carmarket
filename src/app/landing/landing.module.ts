@@ -7,11 +7,16 @@ import { AppLandingRoutingModule } from './landing-routing.module';
 import { LandingComponent } from './';
 import { HeaderComponent, FooterComponent } from './components';
 import { CardComponent } from './shared/';
+
+// Pages
 import { PortfolioComponent } from './pages';
+import { PortfolioDetailComponent } from './pages/';
 
 // Pipes
 import { SearchPipe } from './shared/pipes';
 import { SortPipe } from './shared/pipes/sort.pipe';
+import { CarService } from './core';
+
 
 @NgModule({
   imports: [
@@ -31,8 +36,12 @@ import { SortPipe } from './shared/pipes/sort.pipe';
     CardComponent,
     PortfolioComponent,
     SearchPipe,
-    SortPipe
+    SortPipe,
+    PortfolioDetailComponent
   ],
-  providers: [SearchPipe]
+  providers: [
+    SearchPipe, 
+    CarService
+  ]
 })
 export class LandingModule { }
