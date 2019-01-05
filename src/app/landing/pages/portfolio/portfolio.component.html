@@ -12,7 +12,7 @@
         </div>
     </div>
 
-    <div class="col-xs-6 col-md-4" *ngFor="let item of carList | search: query"> 
+    <div class="col-xs-6 col-md-4" *ngFor="let item of carList | sort: 'mark' | search: query "> 
         <app-card [data]="item"></app-card>
     </div>
     

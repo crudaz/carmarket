@@ -1,6 +1,7 @@
 export class Card {
+    mark: string;
     model: string;
-    imagePath: string;
+    photo: string;
     year: '2015';
     price: '8000';
 }

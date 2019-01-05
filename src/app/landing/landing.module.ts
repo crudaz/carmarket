@@ -5,11 +5,13 @@ import { AppLandingRoutingModule } from './landing-routing.module';
 
 // Components
 import { LandingComponent } from './';
-
 import { HeaderComponent, FooterComponent } from './components';
 import { CardComponent } from './shared/';
 import { PortfolioComponent } from './pages';
+
+// Pipes
 import { SearchPipe } from './shared/pipes';
+import { SortPipe } from './shared/pipes/sort.pipe';
 
 @NgModule({
   imports: [
@@ -28,7 +30,8 @@ import { SearchPipe } from './shared/pipes';
     FooterComponent,
     CardComponent,
     PortfolioComponent,
-    SearchPipe
+    SearchPipe,
+    SortPipe
   ],
   providers: [SearchPipe]
 })
