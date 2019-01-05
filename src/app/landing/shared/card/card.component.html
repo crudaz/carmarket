@@ -1,10 +1,10 @@
-<div class="card" *ngFor="let item of newList">
-  <img [src]="item.imagePath" alt="Avatar" class="card__image">
+<div class="card">
+  <img [src]="data.imagePath" alt="Avatar" class="card__image">
   <div class="card__content">
-    <h4><b>{{item.model}}</b></h4> 
+    <h4><b>{{data.model}}</b></h4> 
     <div class="card__content__column">
-      <div>{{item.year}}</div>
-      <div>{{item.price | currency}}</div>
+      <div>{{data.year}}</div>
+      <div>{{data.price | currency}}</div>
     </div>
     
     <div class="card__button btn-toolbar"> 

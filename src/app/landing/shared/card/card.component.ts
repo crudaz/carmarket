@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Card } from '../../models';
 
 @Component({
   selector: 'app-card',
@@ -6,15 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-
-  newList = [
-    {
-      model: 'Renault Twingo Access',
-      imagePath: 'https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC091A021001.jpg&width=440&height=262',
-      year: '2015',
-      price: '8000'
-    }
-  ];
+  @Input() data: Card;
 
   constructor() { }
 
