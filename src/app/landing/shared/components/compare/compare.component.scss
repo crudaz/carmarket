@@ -1,0 +1,28 @@
+.compare {
+    display: flex;
+
+    & > * {
+        display: flex;
+    }
+
+    &__title {
+
+    }
+
+    &__list {
+        position: relative;
+
+        &__photo {
+            width: 10rem;
+            height: 6rem;
+            margin: 0 1rem;
+        }
+
+        .badge-error {  
+            background-color: #b94a48;
+            cursor: pointer;
+            position: absolute;
+            top: -5px;
+        }
+    }
+}

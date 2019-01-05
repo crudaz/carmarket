@@ -21,8 +21,11 @@ export class PortfolioDetailComponent implements OnInit {
     this.subscription = this.carService.getCar()
       .subscribe( res => {
         this.carSelected = res;
-        console.log(res);
       });
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 
 

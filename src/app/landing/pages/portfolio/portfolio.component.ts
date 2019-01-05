@@ -14,13 +14,13 @@ import { Car } from '../../models';
 export class PortfolioComponent implements OnInit {
   search:any = '';
   carList: any[] = [];
+  compareList: any[] = [];
 
   constructor(
     private carService: CarService
   ) { }
 
   ngOnInit() {
-
     this.carList = [
       {
         id: 1,
@@ -79,6 +79,19 @@ export class PortfolioComponent implements OnInit {
 
   getCar(event: Car) {
     this.carService.setCar(event);
-  } 
+
+    if(event.toCompare === true) {
+      (this.compareList.length < 3) ? this.compareList.push(event) : null; 
+    }
+    else {
+      this.compareList = [];
+    }
+  }
+
+  deleleCar(id: number) {
+    this.compareList = this.compareList.filter(item => item.id !== id);
+  }
+  
+  
 
 }

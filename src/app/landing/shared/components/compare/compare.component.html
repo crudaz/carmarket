@@ -1,0 +1,10 @@
+<div class="well well-lg compare">
+  <span class="compare__title">Compare</span>
+  <div class="compare__list">
+    <div *ngFor="let item of data">
+        <img [src]="item.photo" alt="" class="compare__list__photo">
+        <span class="badge badge-error" (click)="remove(item.id)">x</span>
+    </div>
+    <a href="#" class="btn btn-primary btn-lg" role="button" (click)="onClick()">Compare</a>
+  </div>
+</div>
