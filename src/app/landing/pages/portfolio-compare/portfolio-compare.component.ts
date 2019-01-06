@@ -17,8 +17,6 @@ export class PortfolioCompareComponent implements OnInit {
   ngOnInit() {
     this.subscription = this.carService.getList()
       .subscribe( res => {
-        
-        console.log('list: ', res);
         this.carList = res;
       });
   }

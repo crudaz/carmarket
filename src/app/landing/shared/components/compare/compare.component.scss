@@ -1,16 +1,16 @@
 .compare {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 
     & > * {
         display: flex;
     }
 
-    &__title {
-
-    }
-
     &__list {
         position: relative;
+        flex-wrap: wrap;
 
         &__photo {
             width: 10rem;
@@ -23,6 +23,11 @@
             cursor: pointer;
             position: absolute;
             top: -5px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
         }
     }
 }

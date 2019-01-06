@@ -6,9 +6,13 @@
         (action)="getAction($event)">
     </app-compare>
 
-    <div id="custom-search-input">
+    <div class="portfolio__search">
         <div class="input-group col-md-12">
-            <input type="text" class="form-control input-lg" placeholder="Search by mark" [(ngModel)]="query"/>
+            <input 
+                type="text" 
+                class="form-control input-lg" 
+                placeholder="Search by mark" 
+                [(ngModel)]="query"/>
             <span class="input-group-btn">
                 <button class="btn btn-primary btn-lg" type="button">
                     <i class="glyphicon glyphicon-search"></i>
@@ -17,7 +21,8 @@
         </div>
     </div>
 
-    <div class="col-xs-6 col-md-4" *ngFor="let item of carList | sort: 'mark' | search: query "> 
+    <div class="portfolio__cars col-xs-12 col-sm-4 col-md-4" 
+         *ngFor="let item of carList | sort: 'mark' | search: query "> 
         <app-card [data]="item" (carSelected)="getCar($event)"></app-card>
     </div>
     

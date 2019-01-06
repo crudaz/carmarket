@@ -1,18 +1,29 @@
 <div class="detail">
   
     <div class="detail__brand">
-        <span>{{carSelected.mark}}  {{carSelected.model}}</span>
-        <span>Modelo</span>
-        <span>Precio</span>
+        <span>{{carSelected.mark}}</span>
+        <span>{{carSelected.model}}</span>
+        <span>{{carSelected.price | currency}}</span>
     </div>
 
-    <img src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC091A021001.jpg&width=640&height=462" alt="Avatar" class="card__image">
-    <div>
-        <p>Caracteristicas</p>
-        <p>{{carSelected.mark}} {{carSelected.model}}</p>
+    <div class="detail__image">
+      <img src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC091A021001.jpg&width=640&height=462" 
+           alt="">
+    </div>
+
+    <div class="detail__info">
+        <h3>Caracteristicas</h3>
 
         <table class="table">
             <tbody>
+              <tr>
+                <th scope="row">Mark</th>
+                <td>{{carSelected.mark}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Model</th>
+                <td>{{carSelected.model}}</td>
+              </tr>
               <tr>
                 <th scope="row">Color</th>
                 <td>{{carSelected.color}}</td>

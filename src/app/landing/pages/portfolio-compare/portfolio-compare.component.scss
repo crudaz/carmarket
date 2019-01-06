@@ -1,5 +1,7 @@
 .compare {
     display: flex;
+    padding: 2rem 0;
+    flex-wrap: wrap;
 
     & > * {
         display: flex;
@@ -8,14 +10,24 @@
 
     &__title {
         justify-content: flex-end;
+        padding: 0 0.5rem;
 
         & > div:nth-child(odd) {
             background-color: #ddd;
+        }
+
+        & > * {
+            font-weight: bold;
+            padding: 1rem;
         }
     }
 
     &__list {
         flex-grow: 1;
+
+        & > * {
+            padding: 1rem;
+        }
 
         &__photo {
             width: 200px;
@@ -24,9 +36,5 @@
         & > div:nth-child(even) {
             background-color: #ddd;
         }
-    }
-
-    &__buttons {
-    
     }
 }

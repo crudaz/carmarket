@@ -1,5 +1,15 @@
 .detail {
 
+    &__image {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width:100%;
+            height: 50%;
+        }
+    }
+
     &__brand {
         background-color:#337ab7;
         color: white;
@@ -7,5 +17,4 @@
         justify-content: space-around;
         padding: 20px 0;
     }
-
 }

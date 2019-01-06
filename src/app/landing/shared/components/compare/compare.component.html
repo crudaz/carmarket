@@ -1,12 +1,12 @@
 <div class="well well-lg compare">
-  <span class="compare__title">Compare</span>
+  <h3 class="hidden-xs">Compare Models</h3>
   <div class="compare__list">
     <div *ngFor="let item of data">
         <img [src]="item.photo" alt="" class="compare__list__photo">
         <span class="badge badge-error" (click)="onClick(item.id)">x</span>
     </div>
     <a href="#" 
-       class="btn btn-primary btn-lg" 
+       class="btn btn-primary" 
        role="button" 
        [routerLink]="['product-compare']" 
        (click)="onClick('compare')">Compare</a>
