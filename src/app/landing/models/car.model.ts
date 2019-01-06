@@ -10,3 +10,7 @@ export class Car {
     price: string;
     toCompare?: boolean;
 }
+
+export class CarList {
+    cars: Car[];
+}

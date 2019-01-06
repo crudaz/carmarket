@@ -1,0 +1,32 @@
+.compare {
+    display: flex;
+
+    & > * {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        justify-content: flex-end;
+
+        & > div:nth-child(odd) {
+            background-color: #ddd;
+        }
+    }
+
+    &__list {
+        flex-grow: 1;
+
+        &__photo {
+            width: 200px;
+        }
+        
+        & > div:nth-child(even) {
+            background-color: #ddd;
+        }
+    }
+
+    &__buttons {
+    
+    }
+}

@@ -3,8 +3,12 @@
   <div class="compare__list">
     <div *ngFor="let item of data">
         <img [src]="item.photo" alt="" class="compare__list__photo">
-        <span class="badge badge-error" (click)="remove(item.id)">x</span>
+        <span class="badge badge-error" (click)="onClick(item.id)">x</span>
     </div>
-    <a href="#" class="btn btn-primary btn-lg" role="button" (click)="onClick()">Compare</a>
+    <a href="#" 
+       class="btn btn-primary btn-lg" 
+       role="button" 
+       [routerLink]="['product-compare']" 
+       (click)="onClick('compare')">Compare</a>
   </div>
 </div>

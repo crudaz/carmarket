@@ -7,18 +7,13 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class CompareComponent implements OnInit {
   @Input() data: any[] = [];
-  @Output() carDeleted = new EventEmitter();
+  @Output() action = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() { }
 
-  remove(id: number) {
-    this.carDeleted.emit(id);
+  onClick(action: string) {
+    this.action.emit(action);
   }
-
-  onClick() {
-    
-  }
-
 }

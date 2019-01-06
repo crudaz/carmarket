@@ -3,7 +3,7 @@
     <app-compare
         *ngIf="compareList.length > 0"
         [data]="compareList" 
-        (carDeleted)="deleleCar($event)">
+        (action)="getAction($event)">
     </app-compare>
 
     <div id="custom-search-input">

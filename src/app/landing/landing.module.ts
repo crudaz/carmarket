@@ -9,12 +9,19 @@ import { HeaderComponent, FooterComponent } from './components';
 import { CardComponent, CompareComponent } from './shared/';
 
 // Pages
-import { PortfolioComponent } from './pages';
-import { PortfolioDetailComponent } from './pages/';
+import { 
+  PortfolioComponent, 
+  PortfolioDetailComponent, 
+  PortfolioCompareComponent 
+} from './pages';
 
 // Pipes
-import { SearchPipe } from './shared/pipes';
-import { SortPipe } from './shared/pipes/sort.pipe';
+import { 
+  SearchPipe, 
+  SortPipe 
+} from './shared/pipes';
+
+// Services
 import { CarService } from './core';
 
 @NgModule({
@@ -37,7 +44,8 @@ import { CarService } from './core';
     SearchPipe,
     SortPipe,
     PortfolioDetailComponent,
-    CompareComponent
+    CompareComponent,
+    PortfolioCompareComponent
   ],
   providers: [
     SearchPipe, 

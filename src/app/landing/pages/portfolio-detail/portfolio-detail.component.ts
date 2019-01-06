@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { CarService } from '../../core';
 import { Subscription } from 'rxjs';
+
+import { CarService } from '../../core';
+import { Car } from '../../models';
 
 @Component({
   selector: 'app-portfolio-detail',
@@ -9,11 +10,10 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./portfolio-detail.component.scss']
 })
 export class PortfolioDetailComponent implements OnInit {
-  carSelected: any;
+  carSelected: Car;
   subscription: Subscription;
 
   constructor(
-    private router: Router,
     private carService: CarService
   ) { }
 
