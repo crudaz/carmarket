@@ -1,10 +1,20 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 import { Car, CarList } from '../models';
 
 @Injectable()
 export class CarService {
+  
+  private endpoint = "http://localhost:3000/carList";
+
+  constructor(private http: HttpClient) { }
+
+  getCarList(): Observable<CarList[]> {
+    return this.http.get<CarList[]>(this.endpoint);
+  }
+
   private carSource = new BehaviorSubject<Car>({
     id: 0,
     color: '',
@@ -21,8 +31,6 @@ export class CarService {
     cars: []
   });
 
-  constructor() { }
-
   setCar(data: Car) {
     this.carSource.next(data);
   }
@@ -31,7 +39,7 @@ export class CarService {
     return this.carSource.asObservable();
   }
 
-  setList(data) {
+  setList(data: any) {
     this.compareSource.next(data);
   }
 

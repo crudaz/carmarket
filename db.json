@@ -1,0 +1,59 @@
+{
+    "carList": [
+        {
+            "id": 1,
+            "color": "Black",
+            "type": "Automovil",
+            "transmision": "Manual",
+            "mark": "Renault",
+            "model": "Twingo Access",
+            "photo": "https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC091A021001.jpg&width=440&height=262",
+            "year": "2015",
+            "price": "8000"
+        },
+        {
+            "id": 2,
+            "color": "Silver",
+            "type": "Sedan",
+            "transmision": "Automatic",
+            "mark": "KIA",
+            "model": "Picanto ION",
+            "photo": "https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC091A021001.jpg&width=440&height=262",
+            "year": "2018",
+            "price": "12000"
+        },
+        {
+            "id": 3,
+            "color": "Red",
+            "type": "Automovil",
+            "transmision": "Automatic",
+            "mark": "BMW",
+            "model": "Serie 4",
+            "photo": "https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC091A021001.jpg&width=440&height=262",
+            "year": "2018",
+            "price": "30000"
+        },
+        {
+            "id": 4,
+            "color": "Black",
+            "type": "Automovil",
+            "transmision": "Automatic",
+            "mark": "Mercedes",
+            "model": "CLA E 450",
+            "photo": "https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC091A021001.jpg&width=440&height=262",
+            "year": "2019",
+            "price": "45000"
+        },
+        {
+            "id": 5,
+            "color": "White",
+            "type": "Automovil",
+            "transmision": "Manual",
+            "mark": "KIA",
+            "model": "Rio Spice",
+            "photo": "https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC091A021001.jpg&width=440&height=262",
+            "year": "2015",
+            "price": "9000"
+        }
+    ]
+}
